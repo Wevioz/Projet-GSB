@@ -1,0 +1,8 @@
+<div id='contenu'>
+    <h3>Confirmation de modification : </h3>
+    <div class="encadre">
+        <p class="p">
+            Fiche mise à jour
+        </p>
+    </div>
+</div>

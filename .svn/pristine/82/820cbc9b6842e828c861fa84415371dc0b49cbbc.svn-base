@@ -1,0 +1,8 @@
+<div id='contenu'>
+    <h3>Confirmation de suppression : </h3>
+    <div class="encadre">
+        <p class="p">
+            Fiche refusé
+        </p>
+    </div>
+</div>
