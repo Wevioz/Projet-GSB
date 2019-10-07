@@ -21,7 +21,7 @@
            </li>
         <?php } else { ?>
           <li class="smenu">
-             <a href="index.php?uc=gererFrais&action=selectionnerVisiteur" title="Selectionner Visiteur">Selectionner Visiteur</a>
+             <a href="index.php?uc=gererFraisComptable&action=validerFrais" title="Valider fiche de frais">Valider fiche de frais</a>
           </li>
         <?php } ?>
  	   <li class="smenu">

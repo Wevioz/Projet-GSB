@@ -284,6 +284,7 @@ class PdoGsb{
 		}
 		return $lesMois;
 	}
+
 /**
  * Retourne les informations d'une fiche de frais d'un visiteur pour un mois donné
 
@@ -312,5 +313,11 @@ class PdoGsb{
 		where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
 		PdoGsb::$monPdo->exec($req);
 	}
+
+  public function getLesMois() {
+    $req= "SELECT DISTINCT mois FROM fichefrais";
+    $res = PdoGsb::$monPdo->query($req);
+    return $res;
+  }
 }
 ?>
