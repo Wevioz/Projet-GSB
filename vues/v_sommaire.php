@@ -10,14 +10,20 @@
         <ul id="menuList">
 			<li >
 				  <?= $_SESSION['type'] ?> :<br>
-				<?php echo $_SESSION['prenom']."  ".$_SESSION['nom']  ?>
+				<?php echo $_SESSION['prenom']."  ".$_SESSION['nom'];  ?>
 			</li>
+        <?php if ($_SESSION['type'] == 'visiteur') { ?>
            <li class="smenu">
               <a href="index.php?uc=gererFrais&action=saisirFrais" title="Saisie fiche de frais ">Saisie fiche de frais</a>
            </li>
            <li class="smenu">
               <a href="index.php?uc=etatFrais&action=selectionnerMois" title="Consultation de mes fiches de frais">Mes fiches de frais</a>
            </li>
+        <?php } else { ?>
+          <li class="smenu">
+             <a href="index.php?uc=gererFrais&action=selectionnerVisiteur" title="Selectionner Visiteur">Selectionner Visiteur</a>
+          </li>
+        <?php } ?>
  	   <li class="smenu">
               <a href="index.php?uc=connexion&action=deconnexion" title="Se déconnecter">D�connexion</a>
            </li>

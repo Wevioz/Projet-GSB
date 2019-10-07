@@ -62,7 +62,7 @@ class PdoGsb{
 	}
 /**
  * Retourn les informations d'un comptable
- * 
+ *
  * @param $login
  * @param $mdp
  * @return l'id, le nom et le prénom sous la forme d'un tableau associatif
